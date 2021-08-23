@@ -1,0 +1,19 @@
+{
+    "name": "user/introduccion-phpoop",
+    "description": "Aprendiendo clases, namespace, autoload",
+    "authors": [
+        {
+            "name": "Beto Fiorani",
+            "email": "betofiorani@gmail.com"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^5.2"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "App\\" : "./clases"
+        }
+    }
+}
