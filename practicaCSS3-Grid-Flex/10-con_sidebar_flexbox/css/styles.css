@@ -1,0 +1,98 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.entrada-blog a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/** CODIGO AQUI **/
+
+/* con GAP - 70% compatibilidad*/
+@media (min-width: 768px){
+
+    .cont-sidebar-flex {
+        display: flex;
+        gap: 4rem;
+    }
+}
+
+/* sin GAP - 100% de compatibilidad*/
+
+@media (min-width: 768px){
+
+    .cont-sidebar-flex {
+        display: flex;
+        gap: 2rem;
+        /*justify-content: space-between; si no usamos gap*/
+    }
+    /* con flex basis
+    aside {
+        flex-basis: calc(33.3% - 4rem);
+    }
+    article {
+        flex-basis: calc(66.6% - 4rem);
+    }
+
+    o tambien
+
+    aside {
+        flex: 0 0 calc(33.3% - 4rem);
+    }
+    article {
+        flex: 0 0 calc(66.6% - 4rem);
+    }
+    */
+    /*con factor de crecimiento
+    Para cada pixel, aside crece 1 
+    y article 3
+    */
+    aside {
+        flex:1;
+    }
+    article {
+        flex:3;
+    }
+}
